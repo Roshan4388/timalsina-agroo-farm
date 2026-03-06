@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Timalsina Agro Farm</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+  <script src="translations.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><i class="fas fa-leaf"></i> Timalsina Agro</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" data-translate="nav-home">Home</a>
+        <a href="aboutus.html" data-translate="nav-about">About</a>
+        <a href="service.html" data-translate="nav-services">Services</a>
+        <a href="product.html" data-translate="nav-products">Products</a>
+        <a href="member.html" data-translate="nav-team">Team</a>
+        <a href="history.html" data-translate="nav-history">History</a>
+        <a href="image.html" data-translate="nav-gallery">Gallery</a>
+        <a href="contact.html" data-translate="nav-contact">Contact</a>
+      </div>
+      <div class="language-switcher">
+        <button data-lang="en" class="lang-btn active">English</button>
+        <button data-lang="ne" class="lang-btn">नेपाली</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title" data-translate="contact-title">📬 Contact Us</h1>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 50px 0;">
+      <section class="contact-info">
+        <h2 style="color:#1f5e2c; margin-bottom:30px;" data-translate="contact-subtitle">Get in Touch</h2>
+        
+        <div class="contact-card" style="background:#e3f0da; padding:20px; border-radius:12px; margin-bottom:20px; animation: fadeInUp 0.6s ease-out;">
+          <i class="fas fa-map-marker-alt" style="color:#2d5016; font-size:1.5rem; margin-right:15px;"></i>
+          <div style="display:inline-block;">
+            <p style="margin:0; font-weight:bold; color:#1f5e2c;" data-translate="contact-address-label">Address</p>
+            <p style="margin:5px 0 0 0; color:#555;" data-translate="contact-address">123 Green Valley Road, Agriculture Town</p>
+          </div>
+        </div>
+
+        <div class="contact-card" style="background:#e3f0da; padding:20px; border-radius:12px; margin-bottom:20px; animation: fadeInUp 0.7s ease-out;">
+          <i class="fas fa-phone" style="color:#2d5016; font-size:1.5rem; margin-right:15px;"></i>
+          <div style="display:inline-block;">
+            <p style="margin:0; font-weight:bold; color:#1f5e2c;" data-translate="contact-phone-label">Phone</p>
+            <p style="margin:5px 0 0 0; color:#555;"><a href="tel:+97798123456" style="color:#2d5016; text-decoration:none;" data-translate="contact-phone">+977 9812345678</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card" style="background:#e3f0da; padding:20px; border-radius:12px; animation: fadeInUp 0.8s ease-out;">
+          <i class="fas fa-envelope" style="color:#2d5016; font-size:1.5rem; margin-right:15px;"></i>
+          <div style="display:inline-block;">
+            <p style="margin:0; font-weight:bold; color:#1f5e2c;" data-translate="contact-email-label">Email</p>
+            <p style="margin:5px 0 0 0; color:#555;"><a href="mailto:info@timalsinaagro.com" style="color:#2d5016; text-decoration:none;" data-translate="contact-email">info@timalsinaagro.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form" style="animation: fadeInUp 0.9s ease-out;">
+        <h2 style="color:#1f5e2c; margin-bottom:30px;" data-translate="contact-form-heading">Send us a message</h2>
+        <form action="" method="post">
+          <div style="margin-bottom:20px;">
+            <label for="name" style="display:block; color:#1f5e2c; font-weight:bold; margin-bottom:8px;" data-translate="contact-form-name">Name</label>
+            <input type="text" id="name" name="name" required style="width:100%; padding:12px; border:2px solid #d4e8cd; border-radius:8px; font-family:inherit; transition:border-color 0.3s; box-sizing:border-box;" onfocus="this.style.borderColor='#2d5016';" onblur="this.style.borderColor='#d4e8cd';"><br>
+          </div>
+          <div style="margin-bottom:20px;">
+            <label for="email" style="display:block; color:#1f5e2c; font-weight:bold; margin-bottom:8px;" data-translate="contact-form-email">Email</label>
+            <input type="email" id="email" name="email" required style="width:100%; padding:12px; border:2px solid #d4e8cd; border-radius:8px; font-family:inherit; transition:border-color 0.3s; box-sizing:border-box;" onfocus="this.style.borderColor='#2d5016';" onblur="this.style.borderColor='#d4e8cd';"><br>
+          </div>
+          <div style="margin-bottom:20px;">
+            <label for="message" style="display:block; color:#1f5e2c; font-weight:bold; margin-bottom:8px;" data-translate="contact-form-message">Message</label>
+            <textarea id="message" name="message" rows="5" required style="width:100%; padding:12px; border:2px solid #d4e8cd; border-radius:8px; font-family:inherit; resize:vertical; transition:border-color 0.3s; box-sizing:border-box;" onfocus="this.style.borderColor='#2d5016';" onblur="this.style.borderColor='#d4e8cd';"></textarea><br>
+          </div>
+          <button type="submit" style="background:#2d5016; color:white; padding:12px 30px; border:none; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; transition:background 0.3s, transform 0.2s; width:100%;" onmouseover="this.style.background='#1f5e2c'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='#2d5016'; this.style.transform='translateY(0)';">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h4>Timalsina Agro</h4>
+        <p>Rooted in nature, growing together.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="aboutus.html">about</a> · <a href="service.html">services</a> · <a href="product.html">shop</a>
+      </div>
+      <div>
+        <h4>follow</h4>
+        <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/YourProfile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/YourHandle" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com/YourChannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://linkedin.com/in/YourProfile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div>
+        <h4>ethics</h4>
+        <p>no chemicals · fair wages</p>
+      </div>
+      <div style="margin-left:auto; text-align:right;">
+        <h4>contact</h4>
+        <p>himalayan marga, near shree memorial hospital, banepa-5 gochekchwour<br>9768438873<br>timalsinaroshan345@gmail.com</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 Timalsina Agro Farm. All rights reserved.</p>
+    </div>
+    <a href="contact.html" style="position:fixed; bottom:20px; right:20px; background:#2d5016; color:white; padding:10px 15px; border-radius:50px; text-decoration:none; font-size:0.9rem; box-shadow:0 2px 6px rgba(0,0,0,0.3);">Contact Us</a>
+  </footer>
+</body>
+</html>
