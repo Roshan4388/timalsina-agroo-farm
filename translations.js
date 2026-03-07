@@ -39,6 +39,11 @@ const translations = {
     'buffalo-swamp-desc': 'Used for draught and manure, familiar to our farm.',
     'buffalo-suppliers': 'Our main stock comes through <strong>suresh Livestock Co.</strong> and <strong>shambu feed.com</strong>.',
     
+    // Proprietor Message
+    'proprietor-title': 'Message from the Proprietor',
+    'proprietor-message': 'Welcome to Timalsina Agro Farm. Our journey started with the goal of producing healthy dairy products while caring responsibly for our buffaloes and land. We also aim to inspire the young generation to see agriculture as a modern and profitable profession.',
+    'proprietor-signature': '— prakash timalsina ',
+    
     // Visit Section
     'visit-title': 'Visit us',
     'visit-desc': 'We welcome visitors to our farm! Open daily from 5am-7pm.',
@@ -49,7 +54,7 @@ const translations = {
     'footer-follow': 'follow',
     'footer-ethics': 'no chemicals · fair wages',
     'footer-contact': 'contact',
-    'footer-address': '123 himalyan marga Road',
+    'footer-address': 'himalayan marga, near shree memorial hospital, banepa-5 gochekchwour',
     'footer-phone': '+977 9851097608',
     'footer-email': 'timalsianroshan345@gmail.com',
     'footer-copyright': '© 2025 Timalsina Agro Farm — built with care for the land',
@@ -81,11 +86,11 @@ const translations = {
     'contact-form-message': 'Message',
     'contact-form-submit': 'Send Message',
     'contact-address-label': 'Address',
-    'contact-address': '123 Green Valley Road, Agriculture Town',
+    'contact-address': 'himalayan marga, near shree memorial hospital, banepa-5 gochekchwour',
     'contact-phone-label': 'Phone',
     'contact-phone': '+977 9812345678',
     'contact-email-label': 'Email',
-    'contact-email': 'info@timalsinaagro.com',
+    'contact-email': 'timalsinaroshan345@gmail.com',
     
     // Services Page
     'services-title': '🧑‍🌾 Our services',
@@ -211,6 +216,11 @@ const translations = {
     'buffalo-swamp': 'दलदली',
     'buffalo-swamp-desc': 'ड्राफ्ट र खाद को लागि प्रयोग, हाम्रो फार्मको लागि परिचित।',
     'buffalo-suppliers': 'हाम्रो मुख्य स्टक <strong>सुरेश पशुधन कोम्पनी</strong> र <strong>शम्भु फीड.कम</strong> मार्फत आउँछ।',
+    
+    // Proprietor Message
+    'proprietor-title': 'मालिकको सन्देश',
+    'proprietor-message': 'तिमाल्सिना कृषि फार्ममा स्वागत छ। हाम्रो यात्रा स्वस्थ दुध उत्पादन गर्ने र हाम्रो भैंसी र जमिनको जिम्मेवारीपूर्वक हेरचाह गर्ने लक्ष्यसँगै सुरु भएको हो। हाम्रो लक्ष्य युवा पुस्तालाई कृषिलाई आधुनिक र लाभदायक पेशाको रूपमा हेर्न प्रेरित गर्नु पनि हो।',
+    'proprietor-signature': '— रोशन तिमाल्सिना',
     
     // Visit Section
     'visit-title': 'हामीलाई भेट्न आउनुहोस्',
