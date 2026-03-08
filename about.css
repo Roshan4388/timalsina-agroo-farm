@@ -239,6 +239,31 @@ hr {
   color: #487a4b;
   margin-bottom: 8px;
 }
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+}
+
+.lightbox-img{
+  max-width:90%;
+  max-height:90%;
+}
+
+.lightbox-close{
+  position:absolute;
+  top:20px;
+  right:40px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+} 
 
 /* image hover scaling */
 /* image optimization + hover scaling */
@@ -526,4 +551,31 @@ hr {
 .farm-icon {
   color: #1f5e2c;
   margin-right: 8px;
+}
+
+/* Lightbox Styles */
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+}
+
+.lightbox-img{
+  max-width:90%;
+  max-height:90%;
+}
+
+.lightbox-close{
+  position:absolute;
+  top:20px;
+  right:40px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
 }

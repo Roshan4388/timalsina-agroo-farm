@@ -34,35 +34,60 @@
 
   <main class="container">
     <h1 class="page-title" data-translate="gallery-title">📸 Gallery</h1>
-    <section class="gallery-grid">
+    <section class="gallery">
       <!-- replace src attributes with real image paths -->
-       < <div class="gallery-item"><img src="FB_IMG_1772725700537.jpg" alt=""></div>
-<div class="gallery-item"><img src="FB_IMG_1772725683819.jpg"  alt=""></div>
-<div class="gallery-item"><img src="FB_IMG_1772725681607.jpg" alt=""></div>
-<div class="gallery-item"><img src="FB_IMG_1772725654107.jpg" alt=""></div>
-<div class="gallery-item"><img src="FB_IMG_1772725650772.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo6.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo7.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo8.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo9.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo10.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo11.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo12.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo13.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo14.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo15.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo16.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo17.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo18.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo19.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo20.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo21.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo22.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo23.jpg" alt=""></div>
-<div class="gallery-item"><img src="images/photo24.jpg" alt=""></div>
+       <div class="gallery-item"><img src="FB_IMG_1772725700537.jpg" alt="A view of the farm fields" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="FB_IMG_1772725683819.jpg"  alt="Lush green grass for livestock" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="FB_IMG_1772725681607.jpg" alt="Close-up of healthy soil" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="FB_IMG_1772725654107.jpg" alt="Buffalo grazing in the pasture" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="FB_IMG_1772725650772.jpg" alt="Farm infrastructure and buildings" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo6.jpg" alt="Farm produce display" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo7.jpg" alt="Farm animals" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo8.jpg" alt="Farm equipment" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo9.jpg" alt="Farm events" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo10.jpg" alt="Seasonal changes on the farm" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo11.jpg" alt="Community involvement at the farm" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo12.jpg" alt="Farm to table produce" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo13.jpg" alt="Harvested crops" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo14.jpg" alt="Irrigation system at work" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo15.jpg" alt="Workers at the farm" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo16.jpg" alt="Another view of the farm" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo17.jpg" alt="Close-up of a plant" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo18.jpg" alt="A healthy buffalo" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo19.jpg" alt="Farm landscape" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo20.jpg" alt="Fresh milk product" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo21.jpg" alt="Organic vegetables" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo22.jpg" alt="Farm team photo" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo23.jpg" alt="Sunset over the farm" loading="lazy" onclick="openLightbox(this)"></div>
+<div class="gallery-item"><img src="images/photo24.jpg" alt="A calf on the farm" loading="lazy" onclick="openLightbox(this)"></div>
 
     </section>
   </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Enlarged image">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+  </div>
+
+  <script>
+    function openLightbox(img){
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
 
   <footer class="footer">
     <div class="container">
