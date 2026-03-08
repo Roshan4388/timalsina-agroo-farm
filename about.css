@@ -252,8 +252,11 @@ hr {
 }
 
 .lightbox-img{
-  max-width:90%;
-  max-height:90%;
+  max-width:90vw;
+  max-height:90vh;
+  width:auto;
+  height:auto;
+  object-fit:contain;
 }
 
 .lightbox-close{
@@ -567,8 +570,11 @@ hr {
 }
 
 .lightbox-img{
-  max-width:90%;
-  max-height:90%;
+  max-width:90vw;
+  max-height:90vh;
+  width:auto;
+  height:auto;
+  object-fit:contain;
 }
 
 .lightbox-close{
