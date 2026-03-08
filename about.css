@@ -266,7 +266,21 @@ hr {
   font-size:40px;
   color:white;
   cursor:pointer;
-} 
+}
+/*gallery image fix*/
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
 
 /* image hover scaling */
 /* image optimization + hover scaling */
